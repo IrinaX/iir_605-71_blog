@@ -1,0 +1,11 @@
+{% extends "base_layout.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block content %}
+    <section class="py-5">
+        <h1 class="mb-3">{{ header }}</h1>
+        <p>Director: {{ director.name }}</p>
+        <p>Address: {{ address.0 }}, {{ address.1 }}, {{ address.2 }}, {{ address.3 }}</p>
+        <p>Staff: {{ staff.0 }}, {{ staff.1 }}, {{ staff.2 }}</p>
+    </section>
+{% endblock content %}
